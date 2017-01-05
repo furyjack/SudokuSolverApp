@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="play.android.com.sudokusolver.MainActivity">
+
+    <play.android.com.sudokusolver.PuzzleView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/pz"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:id="@+id/pbar"
+        android:visibility="invisible"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solve!"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="20dp"
+
+        />
+</FrameLayout>
